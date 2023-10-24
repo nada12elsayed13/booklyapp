@@ -3,6 +3,7 @@ import 'package:booklyapp/Features/home/presention/views/widgets/list%20viewItem
 import 'package:booklyapp/core/utils/assets.dart';
 import 'package:booklyapp/core/utils/style.dart';
 
+
 import 'package:flutter/material.dart';
 
 class HomeBody extends StatelessWidget {
@@ -18,7 +19,7 @@ class HomeBody extends StatelessWidget {
           CustomAppBar(),
           ListViewItem(),
             SizedBox(height: 50,),
-            Text('Best Seller',style: StylesText.styleText,),
+            Text('Best Seller',style: Styles.textstyle18,),
             BestSellerListView(),
         ],
       ),
@@ -46,7 +47,7 @@ class BestSellerListView extends StatelessWidget {
     ),
     Column(
       children: [
-        
+
       ],
     )
         ],

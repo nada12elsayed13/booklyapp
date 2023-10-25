@@ -1,3 +1,4 @@
+import 'package:booklyapp/Features/home/presention/views/widgets/BooksAction.dart';
 import 'package:booklyapp/Features/home/presention/views/widgets/book_rate.dart';
 import 'package:booklyapp/Features/home/presention/views/widgets/customDetailAppBar.dart';
 import 'package:booklyapp/Features/home/presention/views/widgets/customItem.dart';
@@ -9,33 +10,48 @@ class BookDetailViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-    return  Padding(
-      padding:const EdgeInsets.symmetric(horizontal: 30),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
         children: [
           const CustomBookDetailAppBar(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: width*.2),
-            child:const CustomListViewItem(),
+            padding: EdgeInsets.symmetric(horizontal: width * .2),
+            child: const CustomListViewItem(),
           ),
-          const SizedBox(height: 43,),
-          Text('The Jungle Book',style: Styles.textstyle30.copyWith(
-            fontWeight: FontWeight.bold,
-          ),),
-          const SizedBox(height: 6,),
+          const SizedBox(
+            height: 43,
+          ),
+          Text(
+            'The Jungle Book',
+            style: Styles.textstyle30.copyWith(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(
+            height: 6,
+          ),
           Opacity(
             opacity: .7,
-            child: Text('Rudyard Kipling',style: Styles.textstyle18.copyWith(
-              fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.w500,
-            ),),
+            child: Text(
+              'Rudyard Kipling',
+              style: Styles.textstyle18.copyWith(
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           ),
-          const SizedBox(height: 18,),
+          const SizedBox(
+            height: 18,
+          ),
           const BookRate(
             mainAxisAlignment: MainAxisAlignment.center,
           ),
+          const SizedBox(height:37 ,),
+          const BookAction(),
         ],
       ),
     );
   }
 }
+

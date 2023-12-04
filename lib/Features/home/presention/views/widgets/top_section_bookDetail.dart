@@ -14,7 +14,7 @@ class TopSection extends StatelessWidget {
       children: [
         Padding(
             padding: EdgeInsets.symmetric(horizontal: width * .2),
-            child: const CustomListViewItem(),
+            child:const  CustomListViewItem(imagUrl: 'https://tse3.mm.bing.net/th/id/OIP.06Ki-ouE9nBjIKqZnVGfowHaHa?w=500&h=500&rs=1&pid=ImgDetMain',),
           ),
           const SizedBox(
             height: 43,

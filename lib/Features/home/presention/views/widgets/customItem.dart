@@ -1,21 +1,26 @@
-import 'package:booklyapp/core/utils/assets.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-class CustomListViewItem extends StatelessWidget {
-  const CustomListViewItem({super.key});
+import 'package:booklyapp/core/utils/assets.dart';
 
+class CustomListViewItem extends StatelessWidget {
+  const CustomListViewItem({
+    Key? key,
+    required this.imagUrl,
+  }) : super(key: key);
+  final String imagUrl;
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 2.6/4,
+      aspectRatio: 2.6 / 4,
       child: Container(
         decoration: BoxDecoration(
-          image:const DecorationImage(image: AssetImage(Asset2.testImage),fit: BoxFit.fill),
+          image:  DecorationImage(
+              image: NetworkImage(imagUrl), fit: BoxFit.fill),
           borderRadius: BorderRadius.circular(16),
-          color: Colors.red,
+          
         ),
       ),
     );
   }
 }
-

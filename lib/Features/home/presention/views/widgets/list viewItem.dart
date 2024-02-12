@@ -22,7 +22,7 @@ class ListViewItem extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return  Padding(
                     padding:const EdgeInsets.symmetric(horizontal: 8),
-                    child: CustomListViewItem(imagUrl: state.books[index].volumeInfo.imageLinks.thumbnail,),
+                    child: CustomListViewItem(imagUrl: state.books[index].volumeInfo!.imageLinks.thumbnail,),
                   );
                 }),
           );

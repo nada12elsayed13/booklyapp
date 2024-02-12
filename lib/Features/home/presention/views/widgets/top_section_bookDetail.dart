@@ -41,7 +41,9 @@ class TopSection extends StatelessWidget {
           const SizedBox(
             height: 18,
           ),
-          const BookRate(
+            const BookRate(
+              rate: 5,
+              count: 250,
             mainAxisAlignment: MainAxisAlignment.center,
           ),
           const SizedBox(
